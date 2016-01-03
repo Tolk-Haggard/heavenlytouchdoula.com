@@ -1,16 +1,16 @@
 
 $(document).ready(function(){/* copy loaded thumbnails into carousel */
 $('.row .thumbnail').on('load', function() {
-  
+
 }).each(function(i) {
   if(this.complete) {
-  	var item = $('<div class="item"></div>');
+    var item = $('<div class="item"></div>');
     var itemDiv = $(this).parents('div');
     var title = $(this).parent('a').attr("title");
-    
+
     item.attr("title",title);
-  	$(itemDiv.html()).appendTo(item);
-  	item.appendTo('.carousel-inner'); 
+    $(itemDiv.html()).appendTo(item);
+    item.appendTo('.carousel-inner');
     if (i==0){ // set first item active
      item.addClass('active');
     }
@@ -28,10 +28,10 @@ $('#modalCarousel').on('slid.bs.carousel', function () {
 /* when clicking a thumbnail */
 $('.row .thumbnail').click(function(){
     var idx = $(this).parents('div').index();
-  	var id = parseInt(idx);
-  	$('#photoModal').modal('show'); // show the modal
+    var id = parseInt(idx);
+    $('#photoModal').modal('show'); // show the modal
     $('#modalCarousel').carousel(id); // slide carousel to selected
-  	
+
 });
 
 });

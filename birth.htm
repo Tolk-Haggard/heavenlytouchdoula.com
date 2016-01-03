@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Heavenly Touch Doula</title>
+    <title>Heavenly Touch Doula - Birth Photos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assests/css/bootstrap.css" rel="stylesheet">
@@ -16,7 +16,8 @@
     <link href="assests/css/bootstrap-theme.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assests/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	<link href="assests/css/htd.css" rel="stylesheet">
+    <link href="assests/css/htd.css" rel="stylesheet">
+	<link href="assests/css/portfolio.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="htd.css" rel="stylesheet">
@@ -51,13 +52,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          <li class="active"><a href="index.htm">Home</a></li>
+          <li><a href="index.htm">Home</a></li>
           <li><a href="packages.htm">Packages</a></li>
           <li><a href="about_me.htm">About Me</a></li>
-          <li class="dropdown">
+          <li class="dropdown, active">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="birth.htm">Birth</a></li>
+            <li class="active"><a href="birth.htm">Birth</a></li>
             <li><a href="postpartum.htm">Postpartum</a></li>
             </ul>
           </li>
@@ -67,38 +68,53 @@
       </div>
     </nav>
 
-	<div class="container theme-showcase" role="main">
-
-      <div class="well">
-        <p>Heavely Touch Doula Services offers a free consultation to anyone interested in Doula Support.</p>
-      </div>
-      
-      <div class="row">
-        <div class="col-sm-6">
-		  <h3>Services Offered</h3>
-          <p><ul>
-	        <li>Antepartum</li>
-	        <li>Labor</li>
-	        <li>Birth</li>
-	        <li>Postpartum</li>
-	      </ul></p>
+<div class="container">
+  <div class="row">
+    <h1>Birth Photos</h1>
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 1" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto1.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 2" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto2.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 3" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto3.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 4" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto4.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 5" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto5.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 6" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto6.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Birth Photo 7" href="#"><img class="thumbnail img-responsive" src="assests/img/birthphoto7.jpg"></a></div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="photoModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+	<div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal">×</button>
+		<h3 class="modal-title"></h3>
+	</div>
+	<div class="modal-body">
+		<div id="modalCarousel" class="carousel">
+ 
+          <div class="carousel-inner">
+           
+          </div>
+          
+          <a class="carousel-control left" href="#modalCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          
         </div>
-        <div class="col-sm-6">
-          <p><img class="img-rounded" src="assests/img/casey_doula_by_fireplace_color.jpg"" alt="Doula Picture" width="252" height="334"></p>
-        </div>
-      </div>
-	  
-	  <div class="row">
-	  <p>A Doula is a birth companion and post birth supporter, who assists a woman before, during, and after childbirth as well as her spouse and family by providing physical and emotional support.</p>
-      </div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+   </div>
+  </div>
+</div>
 
     <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2015 Heavenly Touch Doula, LLC.</p>
-    </footer>
-		
-	</div>
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Heavenly Touch Doula, LLC.</p>
+      </footer>
+        
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -106,6 +122,7 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="assests/js/bootstrap.js"></script>
     <script src="assests/js/holder.js"></script>
+	<script src="assests/js/portfolio.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
